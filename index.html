@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sankarganesh R. | Mechanical & Energy Engineer</title>
+  <style>
+    /* Reset & basics */
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background: #004466;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.2rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      opacity: 0.8;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #004466;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #007bff;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    /* About */
+    .about p {
+      margin-bottom: 1rem;
+    }
+
+    /* Skills */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .skill {
+      background: #e3f2fd;
+      border-radius: 8px;
+      padding: 1rem;
+      flex: 1 1 45%;
+      min-width: 250px;
+    }
+    .skill strong {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color: #003366;
+    }
+    .progress-bar {
+      background: #cfd8dc;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 15px;
+      margin-top: 0.5rem;
+    }
+    .progress-fill {
+      height: 100%;
+      background: #007bff;
+      width: 0;
+      transition: width 1.5s ease-in-out;
+      border-radius: 20px;
+    }
+
+    /* Timeline */
+    .timeline-item {
+      margin-bottom: 1.5rem;
+      border-left: 3px solid #007bff;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 0;
+      width: 15px;
+      height: 15px;
+      background: #007bff;
+      border-radius: 50%;
+    }
+    .timeline-item h3 {
+      font-size: 1.1rem;
+      color: #004466;
+      margin-bottom: 0.3rem;
+    }
+    .timeline-item p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Projects */
+    .projects-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .projects-list li {
+      background: #e3f2fd;
+      padding: 0.7rem 1rem;
+      margin-bottom: 0.7rem;
+      border-radius: 6px;
+    }
+
+    /* Contact */
+    .contact-info {
+      font-size: 1rem;
+      background: #e8f0fe;
+      padding: 1rem;
+      border-radius: 8px;
+      display: inline-block;
+    }
+    .contact-info strong {
+      color: #004466;
+    }
+
+    .image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image-grid img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #ddd;
+      margin-top: 3rem;
+    }
+
+    /* Animate progress bars */
+    .animate .progress-fill.agriculture {
+      width: 85%;
+    }
+    .animate .progress-fill.design {
+      width: 70%;
+    }
+    .animate .progress-fill.energy {
+      width: 80%;
+    }
+    .animate .progress-fill.training {
+      width: 90%;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sankarganesh R.</h1>
+    <p>B.E (Mechanical), M.Tech (Energy Technology)</p>
+    <p>Sri Tech Engineering, Namakkal & SM Groups, Salem & Namakkal</p>
+  </header>
+
+  <main>
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p>With collaborative skills in Mechanical Design & Research, Energy Engineering & Technology, and a background in Agriculture, I focus on developing products and equipment combining renewable technologies for agricultural & food sectors.</p>
+      <p>Alongside, I educate students by sharing this knowledge and practical skills.</p>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Core Skills</h2>
+      <div class="skills-list animate">
+        <div class="skill">
+          <strong>Agriculture</strong>
+          <div class="progress-bar"><div class="progress-fill agriculture"></div></div>
+          <span>85%</span>
+        </div>
+        <div class="skill">
+          <strong>Engineering Design, Development & Research</strong>
+          <div class="progress-bar"><div class="progress-fill design"></div></div>
+          <span>70%</span>
+        </div>
+        <div class="skill">
+          <strong>Energy Technology</strong>
+          <div class="progress-bar"><div class="progress-fill energy"></div></div>
+          <span>80%</span>
+        </div>
+        <div class="skill">
+          <strong>Training</strong>
+          <div class="progress-bar"><div class="progress-fill training"></div></div>
+          <span>90%</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Services & Solutions</h2>
+      <p>I have worked as a trainer, team coordinator, team leader, team head, manager, and founder of Sri Tech Engineering and SM Groups.</p>
+
+      <h3>Sri Tech Engineering</h3>
+      <ul>
+        <li>Manufacturing Agro, Food, and Poultry Machineries</li>
+        <li>Material Fabrication & Engineering works in Athanoor and Vaiyappamalai</li>
+      </ul>
+
+      <h3>Sri Vel Associates</h3>
+      <ul>
+        <li>Production, Transportation & Trading of Agro, Food, and Poultry Products including Raw Materials</li>
+      </ul>
+
+      <h3>SM Groups</h3>
+      <ul>
+        <li>Providing industrial-oriented knowledge & training to students</li>
+        <li>Acting as a bridge between students and industries</li>
+      </ul>
+    </section>
+
+    <section id="professional-skills">
+      <h2>Professional Skills</h2>
+
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Problem Solving</li>
+        <li>Critical Thinking</li>
+        <li>Flexibility</li>
+        <li>Communication</li>
+        <li>Teamwork</li>
+        <li>Organizational Skills</li>
+        <li>Creativity</li>
+        <li>Emotional Intelligence</li>
+        <li>Responsibility</li>
+      </ul>
+
+      <h3>Hard Skills</h3>
+      <ul>
+        <li>Design</li>
+        <li>Digital Skills</li>
+        <li>Analysis</li>
+        <li>Mathematics</li>
+        <li>Negotiation</li>
+        <li>Project Management</li>
+        <li>Administration</li>
+        <li>Marketing</li>
+      </ul>
+    </section>
+
+    <section id="timeline">
+      <h2>Professional Timeline</h2>
+
+      <div class="timeline-item">
+        <h3>2013 - Present: Sri Vel Associates</h3>
+        <p>Team associate working with industrial manpower consultancies bridging students and industries.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>2016 - 2018</h3>
+        <p>Started as Designer and Trainer at Shree Pavin Tech Technologies, Salem. Freelanced for SPM and food machinery companies in Coimbatore and Chennai.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>2020</h3>
+        <p>Freelancer for Shree Pavin Technologies and worked with PRR Engineering, Hammer Industries, and Sapphira Engineering (ISRO Tier 4 companies).</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>2020 - 2021</h3>
+        <p>Design Manager & Project Head at Lakshmi Industrial Equipments - VCO Plant Installation & New Product Development.</p>
+        <p>Founded Sri Tech Engineering, CEO of projects including SIDCO, Railway subcontracts, JMC Pvt Ltd highway projects, Indian Oil Corporation contracts, PEBs with SKV Industries, Agricultural machineries, and 3D printing.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects & Products Developed</h2>
+      <ul class="projects-list">
+        <li>Electrical Two-wheeler prototype with ergonomics and design calculations.</li>
+        <li>Electrical Three-wheeler design following ARAI standards.</li>
+        <li>Sod cutter for agriculture purpose.</li>
+        <li>Apartment clamps, pipe clamps, and kartar harvester c-box assembly.</li>
+        <li>Circular sheet cutting machine.</li>
+        <li>Reverse engineering with FARO ARM, Geomagic Qualify, SolidWorks, CMM scanning.</li>
+        <li>Electric bike and low budget electrical two-wheeler designs.</li>
+        <li>Curd churning machine.</li>
+        <li>Parabolic water heater with thermoelectric generator.</li>
+        <li>Reverse engineering on plate making and firecracker machines.</li>
+      </ul>
+    </section>
+
+    <section id="software-skills">
+      <h2>Proficiencies & Software Skills</h2>
+      <ul>
+        <li>Basics in CNC, Tools & Die, Mold tooling, Sheet metal, Jigs & Fixtures, 3D printing</li>
+        <li>Reverse Engineering Techniques, 3D scanning, welding, PEB design & analysis</li>
+        <li>EV Design Development, Transmission System, Basics Aerodynamics, New Product Development (NPD)</li>
+      </ul>
+      <p><strong>Software:</strong> AutoCAD, SolidWorks, Creo, CATIA, Geomagic Qualify, ANSYS, Inventor, Fusion 360, Revit, Tekla, NX CAD, SP3D</p>
+    </section>
+    <section id="project-gallery" style="text-align:center; padding: 40px; background-color: #f9f9f9;">
+        <h2>Project Highlights</h2>
+        <p>NATIONAL HIGHWAYS (SMARTCITY-MADURAI)</p>
+        <div class="image-grid">
+          <img src="images/picture1.png" alt="Project 1" />
+          <img src="images/picture2.png" alt="Project 2" />
+          <img src="images/picture3.png" alt="Project 3" /> 
+        </div>
+        <div><br>
+            <p>NATIONAL HIGHWAYS (SMARTCITY)</p>
+            <div class="image-grid">
+                <img src="images/picture4.png" alt="Project 1" />
+                <img src="images/picture5.png" alt="Project 2" />
+            </div>
+        </div>
+        <div><br>
+            <p>IOCL</p>
+            <div class="image-grid">
+                <img src="images/picture6.png" alt="Project 1" />
+                <img src="images/picture7.png" alt="Project 2" />
+            </div>
+        </div>
+        <div><br>
+            <p>SIDCO</p>
+            <div class="image-grid">
+                <img src="images/picture8.png" alt="Project 1" />
+                <img src="images/picture.png" alt="Project 2" />
+            </div>
+        </div>
+      </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p><strong>Phone:</strong> +91 94867 83278</p>
+        <p><strong>Email:</strong> <a href="mailto:sankarganesh@example.com">sankarganesh@example.com</a></p>
+        <p><strong>Location:</strong> Namakkal, Tamil Nadu, India</p>
+      </div>
+    </section>
+    
+      
+  </main>
+
+
+  <footer>
+    <p>© 2025 Sankarganesh R. | All rights reserved.</p>
+  </footer>
+</body>
+</html>
